@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stringinterpolation.component.css']
 })
 export class StringinterpolationComponent implements OnInit {
-
+  serverId: number = 10;
+  serverStatus: string  = "offline";
+    
   constructor() { }
+
+  getServerStatus(){
+    return this.serverStatus;
+  }
 
   ngOnInit(): void {
   }
