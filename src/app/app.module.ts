@@ -10,6 +10,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { FirstAssignmentComponent } from './first-assignment/first-assignment.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FirstAssignmentComponent } from './first-assignment/first-assignment.co
     WarningAlertComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    FirstAssignmentComponent
+    FirstAssignmentComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
