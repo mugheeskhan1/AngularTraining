@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIfComponent implements OnInit {
 
+  serverName = 'Test';
+  serverCreated = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  createServer() {
+    this.serverCreated = true;
   }
 
 }
