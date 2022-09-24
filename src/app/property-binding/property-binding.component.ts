@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
-  constructor() { }
+  allowNewUser = false;
+  constructor() {
+    setTimeout(() => {
+      this.allowNewUser = true;
+    }, 2000);
+  }
 
   ngOnInit(): void {
   }
