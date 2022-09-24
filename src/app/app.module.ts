@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { StringinterpolationComponent } from './stringinterpolation/stringinterpolation.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StringinterpolationComponent
+    StringinterpolationComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
