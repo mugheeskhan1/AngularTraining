@@ -9,6 +9,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { FirstAssignmentComponent } from './first-assignment/first-assignment.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     SuccessAlertComponent,
     WarningAlertComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    FirstAssignmentComponent
   ],
   imports: [
     BrowserModule,
