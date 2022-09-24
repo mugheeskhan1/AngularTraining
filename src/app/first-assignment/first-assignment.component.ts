@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstAssignmentComponent implements OnInit {
 
+  username = '';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  resetUser() {
+    this.username = "";
   }
 
 }
