@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
-  serverCreationStatus = 'No server is created yet!';
+  serverName = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onCreateServer() {
-    this.serverCreationStatus = "Server is created";
+  onUpdateServerName(event: Event) {
+    console.log(event);
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
 
 }
