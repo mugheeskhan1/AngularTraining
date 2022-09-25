@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondAssignmentComponent implements OnInit {
 
+  showParagraph = false;
+  log = [1];
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setshowParagraph(event: Event) {
+    this.log.push(this.log.length + 1);
+    this.showParagraph = true;
   }
 
 }

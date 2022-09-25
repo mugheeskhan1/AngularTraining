@@ -1,1 +1,4 @@
-<p>second-assignment works!</p>
+<button class="btn-primary" (click)="setshowParagraph($event)">Display Details</button>
+<p *ngIf="showParagraph">Secret Password = tuna</p>
+<p *ngFor="let click of log " [ngStyle]="{backgroundColor:click >= 6 ? 'blue' : 'transparent'}"
+    [ngClass]="{textcolor: click >= 6}"> {{click}}</p>
