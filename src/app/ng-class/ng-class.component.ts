@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timeInterval } from 'rxjs';
 
 @Component({
   selector: 'app-ng-class',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgClassComponent implements OnInit {
 
-  constructor() { }
+  serverStatus = 'offline';
+  constructor() {
+    setTimeout(() => {
+      this.serverStatus = 'online';
+    }, 2000);
+  }
 
   ngOnInit(): void {
   }
