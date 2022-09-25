@@ -12,6 +12,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { FirstAssignmentComponent } from './first-assignment/first-assignment.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgifElseComponent } from './ngif-else/ngif-else.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgifElseComponent } from './ngif-else/ngif-else.component';
     EventBindingComponent,
     FirstAssignmentComponent,
     NgIfComponent,
-    NgifElseComponent
+    NgifElseComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
