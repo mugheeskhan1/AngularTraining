@@ -15,6 +15,7 @@ import { NgifElseComponent } from './ngif-else/ngif-else.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { SecondAssignmentComponent } from './second-assignment/second-assignment.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgifElseComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgForComponent
+    NgForComponent,
+    SecondAssignmentComponent
   ],
   imports: [
     BrowserModule,
