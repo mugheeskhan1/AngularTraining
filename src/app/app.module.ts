@@ -14,6 +14,7 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgifElseComponent } from './ngif-else/ngif-else.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     NgIfComponent,
     NgifElseComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,
