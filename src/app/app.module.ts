@@ -13,6 +13,7 @@ import { FirstAssignmentComponent } from './first-assignment/first-assignment.co
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgifElseComponent } from './ngif-else/ngif-else.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     FirstAssignmentComponent,
     NgIfComponent,
     NgifElseComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
