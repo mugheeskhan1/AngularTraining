@@ -1,1 +1,10 @@
-<p>ng-for works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Add Names and it will be displayed below: </p>
+            <input type="text" class="form-control" [(ngModel)]="name">
+            <p *ngFor="let server of servers">{{server}}</p>
+            <button class="btn btn-primary" [disabled]="name === ''" (click)="createServer()">Create Server</button>
+        </div>
+    </div>
+</div>
