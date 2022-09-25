@@ -11,6 +11,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { FirstAssignmentComponent } from './first-assignment/first-assignment.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { NgifElseComponent } from './ngif-else/ngif-else.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     PropertyBindingComponent,
     EventBindingComponent,
     FirstAssignmentComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgifElseComponent
   ],
   imports: [
     BrowserModule,
