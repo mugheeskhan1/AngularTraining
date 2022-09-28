@@ -16,6 +16,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { SecondAssignmentComponent } from './second-assignment/second-assignment.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { SecondAssignmentComponent } from './second-assignment/second-assignment
     NgStyleComponent,
     NgClassComponent,
     NgForComponent,
-    SecondAssignmentComponent
+    SecondAssignmentComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
