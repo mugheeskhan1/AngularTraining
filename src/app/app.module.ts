@@ -16,6 +16,9 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { SecondAssignmentComponent } from './second-assignment/second-assignment.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { SecondAssignmentComponent } from './second-assignment/second-assignment
     NgStyleComponent,
     NgClassComponent,
     NgForComponent,
-    SecondAssignmentComponent
+    SecondAssignmentComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
