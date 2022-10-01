@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-trainig';
-  name = 'Mughees';
-  name1 = 'Khan';
+
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
+
+  onintervalFired(firedNumber: number) {
+    if (firedNumber % 2 === 0) {
+      this.evenNumbers.push(firedNumber);
+    }
+    else {
+      this.oddNumbers.push(firedNumber);
+    }
+
+  }
 }
