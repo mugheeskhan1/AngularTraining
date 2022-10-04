@@ -22,6 +22,7 @@ import { EvenComponent } from './even/even.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterDirectiveDirective } from './better-directive/better-directive.directive';
 import { HostListnerDirective } from './host-listner/host-listner.directive';
+import { HostBindingDirective } from './host-binding/host-binding.directive';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HostListnerDirective } from './host-listner/host-listner.directive';
     EvenComponent,
     BasicHighlightDirective,
     BetterDirectiveDirective,
-    HostListnerDirective
+    HostListnerDirective,
+    HostBindingDirective
   ],
   imports: [
     BrowserModule,
