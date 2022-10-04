@@ -23,6 +23,7 @@ import { BasicHighlightDirective } from './basic-highlight/basic-highlight.direc
 import { BetterDirectiveDirective } from './better-directive/better-directive.directive';
 import { HostListnerDirective } from './host-listner/host-listner.directive';
 import { HostBindingDirective } from './host-binding/host-binding.directive';
+import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dynamic-directive-binding.directive';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HostBindingDirective } from './host-binding/host-binding.directive';
     BasicHighlightDirective,
     BetterDirectiveDirective,
     HostListnerDirective,
-    HostBindingDirective
+    HostBindingDirective,
+    DynamicDirectiveBindingDirective
   ],
   imports: [
     BrowserModule,
