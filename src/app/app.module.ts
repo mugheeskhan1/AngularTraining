@@ -24,6 +24,7 @@ import { BetterDirectiveDirective } from './better-directive/better-directive.di
 import { HostListnerDirective } from './host-listner/host-listner.directive';
 import { HostBindingDirective } from './host-binding/host-binding.directive';
 import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dynamic-directive-binding.directive';
+import { UnlessDirectiveDirective } from './unless-directive/unless-directive.directive';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dy
     BetterDirectiveDirective,
     HostListnerDirective,
     HostBindingDirective,
-    DynamicDirectiveBindingDirective
+    DynamicDirectiveBindingDirective,
+    UnlessDirectiveDirective
   ],
   imports: [
     BrowserModule,
