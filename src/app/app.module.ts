@@ -25,6 +25,7 @@ import { HostListnerDirective } from './host-listner/host-listner.directive';
 import { HostBindingDirective } from './host-binding/host-binding.directive';
 import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dynamic-directive-binding.directive';
 import { UnlessDirectiveDirective } from './unless-directive/unless-directive.directive';
+import { TestingStructuralDirectiveComponent } from './testing-structural-directive/testing-structural-directive.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { UnlessDirectiveDirective } from './unless-directive/unless-directive.di
     HostListnerDirective,
     HostBindingDirective,
     DynamicDirectiveBindingDirective,
-    UnlessDirectiveDirective
+    UnlessDirectiveDirective,
+    TestingStructuralDirectiveComponent
   ],
   imports: [
     BrowserModule,
