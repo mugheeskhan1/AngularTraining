@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testing-structural-directive.component.css']
 })
 export class TestingStructuralDirectiveComponent implements OnInit {
-
+  serverName = 'Test';
+  serverCreated = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  createServer() {
+    this.serverCreated = true;
   }
 
 }
