@@ -26,6 +26,7 @@ import { HostBindingDirective } from './host-binding/host-binding.directive';
 import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dynamic-directive-binding.directive';
 import { UnlessDirectiveDirective } from './unless-directive/unless-directive.directive';
 import { TestingStructuralDirectiveComponent } from './testing-structural-directive/testing-structural-directive.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { TestingStructuralDirectiveComponent } from './testing-structural-direct
     HostBindingDirective,
     DynamicDirectiveBindingDirective,
     UnlessDirectiveDirective,
-    TestingStructuralDirectiveComponent
+    TestingStructuralDirectiveComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,
