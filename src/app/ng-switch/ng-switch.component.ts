@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgSwitchComponent implements OnInit {
 
+  value = 10;
   constructor() { }
 
   ngOnInit(): void {
