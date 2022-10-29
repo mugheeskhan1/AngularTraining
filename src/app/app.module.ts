@@ -27,6 +27,8 @@ import { DynamicDirectiveBindingDirective } from './dynamic_directive-binding/dy
 import { UnlessDirectiveDirective } from './unless-directive/unless-directive.directive';
 import { TestingStructuralDirectiveComponent } from './testing-structural-directive/testing-structural-directive.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
     DynamicDirectiveBindingDirective,
     UnlessDirectiveDirective,
     TestingStructuralDirectiveComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
