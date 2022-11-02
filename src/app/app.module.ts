@@ -33,6 +33,7 @@ import { AccountsService } from './accounts.service';
 import { LoggingService } from './logging.service';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
+import { CounterService } from './counter.service';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,7 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
     FormsModule
   ],
   //Now we can access these services application-wide even in another service
-  providers: [AccountsService, LoggingService],
+  providers: [AccountsService, LoggingService, CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
