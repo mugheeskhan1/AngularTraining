@@ -31,6 +31,9 @@ import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
 import { AccountsService } from './accounts.service';
 import { LoggingService } from './logging.service';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
+import { CounterService } from './counter.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,9 @@ import { LoggingService } from './logging.service';
     TestingStructuralDirectiveComponent,
     NgSwitchComponent,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,7 @@ import { LoggingService } from './logging.service';
     FormsModule
   ],
   //Now we can access these services application-wide even in another service
-  providers: [AccountsService, LoggingService],
+  providers: [AccountsService, LoggingService, CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
