@@ -26,7 +26,7 @@ export class EditServerComponent implements OnInit {
     //way 2: reactive to changes after page has been loaded
     let queryParams = this.route.queryParams.subscribe(
       (queryParams: Params) => {
-        this.allowEdit = queryParams['allowEdit'] === 1 ? true : false;
+        this.allowEdit = queryParams['allowEdit'] === '1' ? true : false;
       }
     );
     let fragment = this.route.fragment.subscribe();
