@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StringinterpolationComponent } from './stringinterpolation/stringinterpolation.component';
@@ -34,6 +33,16 @@ import { LoggingService } from './logging.service';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
 import { CounterService } from './counter.service';
+import { UsersComponent } from './users/users.component';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './users/user/user.component';
+import { ServersComponent } from './servers/servers.component';
+import { EditServerComponent } from './servers/edit-server/edit-server.component';
+import { ServerComponent } from './servers/server/server.component';
+import { ServersService } from './servers/servers.service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AuthService } from './auth.service';
+import { AuthGuard } from './auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -64,15 +73,25 @@ import { CounterService } from './counter.service';
     AccountComponent,
     NewAccountComponent,
     ActiveUsersComponent,
-    InactiveUsersComponent
+    InactiveUsersComponent,
+    UsersComponent,
+    HomeComponent,
+    UserComponent,
+    ServersComponent,
+    ServerComponent,
+    EditServerComponent,
+    PageNotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   //Now we can access these services application-wide even in another service
-  providers: [AccountsService, LoggingService, CounterService],
-  bootstrap: [AppComponent]
+  providers: [
+    AccountsService,
+    LoggingService,
+    CounterService,
+    ServersService,
+    AuthService,
+    AuthGuard,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
