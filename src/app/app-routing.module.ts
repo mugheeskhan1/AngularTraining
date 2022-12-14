@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth-guard.service';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EditServerComponent } from './servers/edit-server/edit-server.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'servers',
+    canActivate: [AuthGuard],
     component: ServersComponent,
     children: [
       { path: ':id/edit', component: EditServerComponent },
@@ -27,7 +29,7 @@ const routes: Routes = [
     path: 'not-found',
     component: PageNotFoundComponent,
   },
-  // ** catches all paths not known 
+  // ** catches all paths not known
   //always place this in the end of list otherwise will redirect other pages to not found too
   {
     path: '**',
