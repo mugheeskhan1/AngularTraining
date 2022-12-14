@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { ServersService } from '../servers.service';
 
 @Component({
@@ -11,6 +11,7 @@ export class EditServerComponent implements OnInit {
   server: any;
   serverName = '';
   serverStatus = '';
+  allowEdit = false;
 
   constructor(
     private serversService: ServersService,
@@ -23,7 +24,11 @@ export class EditServerComponent implements OnInit {
     console.log(this.route.snapshot.fragment);
 
     //way 2: reactive to changes after page has been loaded
-    let queryParams = this.route.queryParams.subscribe();
+    let queryParams = this.route.queryParams.subscribe(
+      (queryParams: Params) => {
+        this.allowEdit = queryParams['allowEdit'] === 1 ? true : false;
+      }
+    );
     let fragment = this.route.fragment.subscribe();
     console.log(queryParams);
     console.log(fragment);
