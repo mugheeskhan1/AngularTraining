@@ -44,6 +44,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
 import { Home1Component } from './home1/home1.component';
+import { User1Component } from './user1/user1.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { Home1Component } from './home1/home1.component';
     EditServerComponent,
     PageNotFoundComponent,
     Home1Component,
+    User1Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   //Now we can access these services application-wide even in another service
