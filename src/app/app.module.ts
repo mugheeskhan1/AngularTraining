@@ -45,6 +45,7 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
 import { Home1Component } from './home1/home1.component';
 import { User1Component } from './user1/user1.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,7 @@ import { User1Component } from './user1/user1.component';
     Home1Component,
     User1Component,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   //Now we can access these services application-wide even in another service
   providers: [
     AccountsService,
